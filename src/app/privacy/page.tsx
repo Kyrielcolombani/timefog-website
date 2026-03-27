@@ -40,8 +40,9 @@ export default function PrivacyPage() {
               </h4>
               <p>
                 All task data, schedules, streaks, and preferences are stored
-                locally on your device as JSON files. This data never leaves
-                your device unless you explicitly enable cloud sync.
+                locally on your device in JSON files (tasks.json, segments.json,
+                settings.json, tracking_state.json). This data never leaves
+                your device.
               </p>
 
               <h4 className="mb-2 mt-4 text-sm font-semibold text-white/90">
@@ -67,18 +68,19 @@ export default function PrivacyPage() {
                 Cloud sync data (optional)
               </h4>
               <p>
-                If you enable cloud sync, your task data is stored in a Supabase
-                database tied to your user account. This data is used solely to
-                synchronize your information across your devices. Cloud sync is
-                entirely optional.
+                Cloud sync via Supabase is prepared but not yet active. When
+                enabled in a future update, your task data will be stored in a
+                Supabase database tied to your user account, solely to
+                synchronize your information across your devices.
               </p>
 
               <h4 className="mb-2 mt-4 text-sm font-semibold text-white/90">
                 Payment data
               </h4>
               <p>
-                Subscriptions are processed by RevenueCat through Apple&apos;s
-                App Store. We do not directly collect, store, or have access to
+                Subscriptions ($28.99/year or $2.99/month, with a 7-day free
+                trial) are processed by RevenueCat through Apple&apos;s App
+                Store. We do not directly collect, store, or have access to
                 your payment information (such as credit card numbers).
                 RevenueCat processes transaction data in accordance with
                 Apple&apos;s policies. You can review RevenueCat&apos;s privacy
@@ -98,8 +100,8 @@ export default function PrivacyPage() {
                 Push notifications
               </h4>
               <p>
-                The App uses push notifications solely for task reminders (for
-                example, to notify you when a task is about to end). You can
+                The App uses push notifications solely for task reminders and
+                5-minute warnings before your planned time runs out. You can
                 disable notifications at any time in your iOS Settings.
               </p>
             </Section>
@@ -161,10 +163,10 @@ export default function PrivacyPage() {
               <p className="mt-3">
                 To exercise any of these rights, contact us at{" "}
                 <a
-                  href="mailto:veteatini@gmail.com"
+                  href="mailto:timefog.app@gmail.com"
                   className="text-brand-light underline underline-offset-2 hover:text-white"
                 >
-                  veteatini@gmail.com
+                  timefog.app@gmail.com
                 </a>
                 .
               </p>
@@ -208,10 +210,10 @@ export default function PrivacyPage() {
                 <p>Papeete, Tahiti, France</p>
                 <p>
                   <a
-                    href="mailto:veteatini@gmail.com"
+                    href="mailto:timefog.app@gmail.com"
                     className="text-brand-light underline underline-offset-2 hover:text-white"
                   >
-                    veteatini@gmail.com
+                    timefog.app@gmail.com
                   </a>
                 </p>
               </div>

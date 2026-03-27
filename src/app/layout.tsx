@@ -11,7 +11,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Timefog - See the Cost of Hyperfocus",
   description:
-    "Focus & Time Balance. Timefog makes the cost of hyperfocus visible in real time with a donut chart that shows how overspending on one task shrinks everything else.",
+    "Timefog reveals the cost of hyperfocus \u2014 see where your time actually goes with a visual donut timeline. When one task runs overtime, your other priorities shrink in real time.",
   metadataBase: new URL("https://timefog.app"),
   openGraph: {
     title: "Timefog - See the Cost of Hyperfocus",

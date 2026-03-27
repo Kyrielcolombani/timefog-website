@@ -5,7 +5,7 @@ const features = [
   {
     title: "Visual Donut Timeline",
     description:
-      "See your entire day as a donut chart. Each slice is a task, sized by the time you planned for it. Watch it update in real time as your day unfolds.",
+      "Your entire day shown as a single donut — every task, every break, every minute accounted for.",
     icon: (
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
         <circle
@@ -24,7 +24,7 @@ const features = [
   {
     title: "Priority Shrink",
     description:
-      "When one task runs over, the extra minutes come from your other tasks. You see the trade-off immediately \u2014 not at the end of the day.",
+      "When one task runs overtime, your other priorities physically shrink on screen. See exactly what you\u2019re sacrificing.",
     icon: (
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
         <path
@@ -45,9 +45,9 @@ const features = [
     ),
   },
   {
-    title: "One-Tap Switching",
+    title: "One-Tap Task Switching",
     description:
-      "Move between tasks instantly. Tap the next slice on your donut and the timer starts. No menus, no friction.",
+      "Switch between tasks instantly with a single tap. No menus, no friction.",
     icon: (
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
         <circle cx="16" cy="14" r="6" stroke="#C4F2F9" strokeWidth="2" />
@@ -69,7 +69,7 @@ const features = [
   {
     title: "Smart Notifications",
     description:
-      "Get a gentle nudge before your time runs out on a task. Stay aware without being overwhelmed.",
+      "Get a 5-minute warning before your planned time runs out. Stay ahead, not behind.",
     icon: (
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
         <path
@@ -99,7 +99,7 @@ const features = [
   {
     title: "Sleep Protection",
     description:
-      "Set your bedtime once. Timefog stops scheduling tasks past it, so your sleep is never the thing that shrinks.",
+      "Your bedtime is protected automatically. The app switches to sleep mode when your sleep window starts.",
     icon: (
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
         <path
@@ -120,7 +120,7 @@ const features = [
   {
     title: "Streak Tracking",
     description:
-      "Complete your priorities on time and build a streak. Stay consistent day after day with a simple, visual motivator.",
+      "Complete your priorities within their planned time to build streaks. Track consistency with an emoji calendar.",
     icon: (
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
         <path

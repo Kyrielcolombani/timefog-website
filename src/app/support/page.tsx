@@ -12,32 +12,32 @@ const faqs = [
   {
     question: "How do I cancel my subscription?",
     answer:
-      "Open Settings on your iPhone, tap your name at the top, then tap Subscriptions. Find Timefog in the list and tap Cancel Subscription.",
-  },
-  {
-    question: "How do I delete my account?",
-    answer:
-      "In the Timefog app, go to Settings \u2192 Account \u2192 Delete Account. This will permanently remove your account and all associated cloud data.",
+      "Open Settings on your iPhone \u2192 Tap your name \u2192 Subscriptions \u2192 Timefog \u2192 Cancel Subscription",
   },
   {
     question: "How does Priority Shrink work?",
     answer:
-      "When one priority task runs past its planned time, the extra minutes are taken from your other priority tasks. This shows you the real cost of spending too long on one thing \u2014 before it\u2019s too late to adjust.",
+      "When one priority task runs past its planned time, the extra minutes are taken from your other priority tasks. This shows you the real cost of spending too long on one thing. If a task loses more than 20% of its planned time to shrink, it gets blocked for the rest of the day.",
   },
   {
     question: "Why did my task get blocked?",
     answer:
-      "If a task loses more than 20% of its planned time to shrink, it gets blocked for the rest of the day. This prevents you from attempting a task that no longer has enough time to be meaningful. Blocked tasks reset the next morning.",
+      "If a task loses more than 20% of its planned time to shrink, it gets blocked for the rest of the day and shows \u2018Shrunk \u2014 resets tomorrow\u2019. This resets the next morning.",
   },
   {
     question: "Does the app work offline?",
     answer:
-      "Yes. All your data is stored locally on your device. You don\u2019t need an internet connection to track your time. Cloud sync is optional and only used to synchronize data across multiple devices.",
+      "Yes. All your data is stored locally on your device. You don\u2019t need an internet connection to track your time.",
   },
   {
     question: "How do streaks work?",
     answer:
-      "Complete all your priority tasks within their planned time to earn a streak day. Your streak resets if you miss a day, unless you have Grace Day enabled in Settings. Grace Day gives you one free pass per week.",
+      "Complete all your priority tasks within their planned time to earn a streak day. Tasks that lost more than 20% of their time to shrink don\u2019t count as completed. Your streak resets if you miss a day, unless you have Grace Day enabled in Settings.",
+  },
+  {
+    question: "How do I delete my account?",
+    answer:
+      "In the app, go to Settings \u2192 Account \u2192 Delete Account. This removes all your data.",
   },
 ];
 
@@ -63,7 +63,7 @@ export default function SupportPage() {
               us an email and we will get back to you as soon as possible.
             </p>
             <a
-              href="mailto:veteatini@gmail.com"
+              href="mailto:timefog.app@gmail.com"
               className="mt-4 inline-flex items-center gap-2 rounded-full bg-brand-light/10 px-5 py-2.5 text-sm font-medium text-brand-light transition-colors hover:bg-brand-light/20"
             >
               <svg
@@ -79,7 +79,7 @@ export default function SupportPage() {
                 <rect x="1" y="3" width="14" height="10" rx="2" />
                 <path d="M1 5L8 9L15 5" />
               </svg>
-              veteatini@gmail.com
+              timefog.app@gmail.com
             </a>
           </div>
 
