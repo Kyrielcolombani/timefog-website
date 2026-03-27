@@ -162,9 +162,11 @@ export default function Home() {
               <span className="text-gradient">Hyperfocus</span>
             </h1>
 
-            <p className="animate-fade-in-delay-1 mx-auto mt-6 max-w-xl text-lg leading-relaxed text-white/60 sm:text-xl">
-              Ever spend too long on one thing and realize you ran out of time
-              for everything else? Timefog makes that visible. In real time.
+            <p className="animate-fade-in-delay-1 mx-auto mt-6 max-w-4xl text-lg leading-relaxed text-white/60 sm:text-xl whitespace-nowrap">
+              Ever spend too long on one thing and realize you ran out of time for everything else?
+            </p>
+            <p className="animate-fade-in-delay-1 mx-auto mt-1 max-w-4xl text-lg leading-relaxed text-white/60 sm:text-xl whitespace-nowrap">
+              Timefog makes that visible. In real time.
             </p>
 
             <div className="animate-fade-in-delay-2 mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
@@ -194,9 +196,11 @@ export default function Home() {
                 Everything you need to{" "}
                 <span className="text-gradient">balance your day</span>
               </h2>
-              <p className="mx-auto mt-4 max-w-2xl text-base text-white/50">
-                Timefog gives you a clear picture of where your time goes, so
-                you can make better trade-offs before it is too late.
+              <p className="mx-auto mt-4 max-w-4xl text-base text-white/50 whitespace-nowrap">
+                Timefog gives you a clear picture of where your time goes,
+              </p>
+              <p className="mx-auto mt-1 max-w-4xl text-base text-white/50 whitespace-nowrap">
+                so you can make better trade-offs before it is too late.
               </p>
             </div>
 
@@ -227,10 +231,10 @@ export default function Home() {
                 <div className="absolute left-1/2 top-1/2 h-[400px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-brand-light/5 blur-3xl" />
               </div>
 
-              <h2 className="mx-auto max-w-lg text-3xl font-bold tracking-tight sm:text-4xl">
+              <h2 className="mx-auto text-3xl font-bold tracking-tight sm:text-4xl whitespace-nowrap">
                 Stop losing time without realizing it
               </h2>
-              <p className="mx-auto mt-4 max-w-md text-base text-white/50">
+              <p className="mx-auto mt-4 text-base text-white/50 whitespace-nowrap">
                 Download Timefog and start seeing where your hours actually go.
               </p>
               <div className="mt-8">
