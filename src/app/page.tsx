@@ -141,7 +141,7 @@ export default function Home() {
 
       <main>
         {/* Hero */}
-        <section className="relative overflow-hidden pb-24 pt-32 sm:pb-32 sm:pt-44">
+        <section className="relative overflow-hidden pb-12 pt-32 sm:pb-16 sm:pt-44">
           {/* Background gradient */}
           <div className="absolute inset-0 -z-10">
             <div className="absolute inset-0 bg-gradient-to-b from-brand-light/15 via-transparent to-transparent" />
@@ -181,15 +181,16 @@ export default function Home() {
               </a>
             </div>
 
-            {/* App logo */}
-            <div className="animate-fade-in-delay-3 mx-auto mt-16 flex items-center justify-center sm:mt-20">
-              <img src="/logo-clear.png" alt="Timefog" className="h-64 w-64 sm:h-80 sm:w-80 object-contain" />
+            {/* App logo - fog to clear animation */}
+            <div className="animate-fade-in-delay-3 animate-fog-to-clear relative mx-auto mt-12 flex items-center justify-center sm:mt-16 h-80 w-80 sm:h-96 sm:w-96">
+              <img src="/logo-fog.png" alt="Timefog" className="logo-fog absolute inset-0 h-full w-full object-contain" />
+              <img src="/logo-clear.png" alt="Timefog" className="logo-clear absolute inset-0 h-full w-full object-contain" />
             </div>
           </div>
         </section>
 
         {/* Features */}
-        <section id="features" className="scroll-mt-20 py-24 sm:py-32">
+        <section id="features" className="scroll-mt-20 py-12 sm:py-16">
           <div className="section-container">
             <div className="text-center">
               <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
@@ -224,7 +225,7 @@ export default function Home() {
         </section>
 
         {/* CTA */}
-        <section className="py-24 sm:py-32">
+        <section className="py-12 sm:py-16">
           <div className="section-container">
             <div className="relative overflow-hidden rounded-3xl border border-white/5 bg-gradient-to-br from-surface-raised to-surface-overlay px-8 py-16 text-center sm:px-16">
               <div className="absolute inset-0 -z-10">
