@@ -144,8 +144,8 @@ export default function Home() {
         <section className="relative overflow-hidden pb-24 pt-32 sm:pb-32 sm:pt-44">
           {/* Background gradient */}
           <div className="absolute inset-0 -z-10">
-            <div className="absolute inset-0 bg-gradient-to-b from-brand-light/8 via-transparent to-transparent" />
-            <div className="absolute left-1/2 top-0 -z-10 h-[600px] w-[900px] -translate-x-1/2 rounded-full bg-brand-light/5 blur-3xl" />
+            <div className="absolute inset-0 bg-gradient-to-b from-brand-light/15 via-transparent to-transparent" />
+            <div className="absolute left-1/2 top-0 -z-10 h-[600px] w-[900px] -translate-x-1/2 rounded-full bg-brand-light/10 blur-3xl" />
           </div>
 
           <div className="section-container text-center">
@@ -174,16 +174,16 @@ export default function Home() {
                 href="https://apps.apple.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group inline-flex items-center gap-3 rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-surface transition-all hover:scale-105 hover:shadow-lg hover:shadow-brand-light/10"
+                className="group inline-flex items-center gap-3 rounded-full bg-brand-light px-7 py-3.5 text-sm font-semibold text-surface transition-all hover:scale-105 hover:shadow-lg hover:shadow-brand-light/10"
               >
                 <AppleIcon />
                 Download on the App Store
               </a>
             </div>
 
-            {/* Decorative donut */}
+            {/* App logo */}
             <div className="animate-fade-in-delay-3 mx-auto mt-16 flex items-center justify-center sm:mt-20">
-              <DonutChart />
+              <img src="/logo-clear.png" alt="Timefog" className="h-64 w-64 sm:h-80 sm:w-80 object-contain" />
             </div>
           </div>
         </section>
@@ -208,9 +208,9 @@ export default function Home() {
               {features.map((feature) => (
                 <div
                   key={feature.title}
-                  className="group rounded-2xl border border-white/5 bg-surface-raised p-7 transition-all hover:border-brand-light/15 hover:bg-surface-overlay"
+                  className="group rounded-2xl border border-white/5 bg-surface-raised p-7 transition-all hover:border-brand-light/25 hover:bg-surface-overlay"
                 >
-                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-brand-light/5 transition-colors group-hover:bg-brand-light/10">
+                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-brand-light/10 transition-colors group-hover:bg-brand-light/20">
                     {feature.icon}
                   </div>
                   <h3 className="text-base font-semibold">{feature.title}</h3>
@@ -242,7 +242,7 @@ export default function Home() {
                   href="https://apps.apple.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-3 rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-surface transition-all hover:scale-105 hover:shadow-lg hover:shadow-brand-light/10"
+                  className="inline-flex items-center gap-3 rounded-full bg-brand-light px-7 py-3.5 text-sm font-semibold text-surface transition-all hover:scale-105 hover:shadow-lg hover:shadow-brand-light/10"
                 >
                   <AppleIcon />
                   Download on the App Store
@@ -266,41 +266,3 @@ function AppleIcon() {
   );
 }
 
-function DonutChart() {
-  const segments = [
-    { color: "#C4F2F9", dash: "25 75", rotation: 0, label: "Deep Work" },
-    { color: "#7DD8E6", dash: "18 82", rotation: 25, label: "Exercise" },
-    { color: "#3BBDD0", dash: "15 85", rotation: 43, label: "Reading" },
-    { color: "#5B8A96", dash: "12 88", rotation: 58, label: "Emails" },
-    { color: "#3D6B78", dash: "10 90", rotation: 70, label: "Calls" },
-    { color: "#2A4D58", dash: "20 80", rotation: 80, label: "Free Time" },
-  ];
-
-  return (
-    <div className="relative h-64 w-64 sm:h-80 sm:w-80">
-      <svg viewBox="0 0 120 120" className="h-full w-full -rotate-90">
-        {segments.map((seg, i) => (
-          <circle
-            key={i}
-            cx="60"
-            cy="60"
-            r="46"
-            fill="none"
-            stroke={seg.color}
-            strokeWidth="14"
-            strokeDasharray={seg.dash}
-            strokeDashoffset={-seg.rotation}
-            strokeLinecap="round"
-            className="opacity-80"
-          />
-        ))}
-      </svg>
-      <div className="absolute inset-0 flex items-center justify-center">
-        <div className="text-center">
-          <div className="text-2xl font-bold text-brand-light sm:text-3xl">6h 42m</div>
-          <div className="mt-0.5 text-xs text-white/40">remaining today</div>
-        </div>
-      </div>
-    </div>
-  );
-}

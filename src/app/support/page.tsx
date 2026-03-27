@@ -56,7 +56,7 @@ export default function SupportPage() {
           </p>
 
           {/* Contact card */}
-          <div className="mt-10 rounded-2xl border border-white/5 bg-surface-raised p-7">
+          <div className="mt-10 rounded-2xl border border-brand-light/15 bg-surface-raised p-7">
             <h2 className="text-lg font-semibold">Contact Us</h2>
             <p className="mt-2 text-sm text-white/50">
               Have a question, found a bug, or want to request a feature? Send
@@ -79,7 +79,7 @@ export default function SupportPage() {
                 <rect x="1" y="3" width="14" height="10" rx="2" />
                 <path d="M1 5L8 9L15 5" />
               </svg>
-              timefog.app@gmail.com
+              Send us an email
             </a>
           </div>
 

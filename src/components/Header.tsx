@@ -10,7 +10,7 @@ export default function Header() {
     <header className="fixed top-0 z-50 w-full border-b border-white/5 bg-surface/80 backdrop-blur-xl">
       <div className="section-container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-2.5">
-          <DonutIcon />
+          <img src="/logo-clear.png" alt="Timefog" className="h-8 w-8" />
           <span className="text-lg font-semibold tracking-tight text-white">
             Timefog
           </span>
@@ -121,25 +121,3 @@ export default function Header() {
   );
 }
 
-function DonutIcon() {
-  return (
-    <svg
-      width="28"
-      height="28"
-      viewBox="0 0 28 28"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <circle
-        cx="14"
-        cy="14"
-        r="11"
-        stroke="#C4F2F9"
-        strokeWidth="2.5"
-        strokeDasharray="18 8 12 8 8 8"
-        strokeLinecap="round"
-      />
-      <circle cx="14" cy="14" r="5" fill="#0B0F1A" stroke="#C4F2F9" strokeWidth="1.5" />
-    </svg>
-  );
-}

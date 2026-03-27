@@ -235,7 +235,7 @@ function Section({
 }) {
   return (
     <section>
-      <h3 className="mb-3 text-lg font-semibold text-white">{title}</h3>
+      <h3 className="mb-3 text-lg font-semibold text-brand-light/90">{title}</h3>
       <div className="space-y-3">{children}</div>
     </section>
   );
