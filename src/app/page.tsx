@@ -181,8 +181,8 @@ export default function Home() {
               </a>
             </div>
 
-            {/* App logo - fog to clear animation */}
-            <div className="animate-fade-in-delay-3 animate-fog-to-clear relative mx-auto mt-12 flex items-center justify-center sm:mt-16 h-80 w-80 sm:h-96 sm:w-96">
+            {/* App logo - fog to clear loop animation */}
+            <div className="animate-fade-in-delay-3 animate-fog-to-clear relative mx-auto mt-12 flex items-center justify-center sm:mt-16 h-96 w-96 sm:h-[28rem] sm:w-[28rem]">
               <img src="/logo-fog.png" alt="Timefog" className="logo-fog absolute inset-0 h-full w-full object-contain" />
               <img src="/logo-clear.png" alt="Timefog" className="logo-clear absolute inset-0 h-full w-full object-contain" />
             </div>

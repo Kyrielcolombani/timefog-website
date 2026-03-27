@@ -10,7 +10,7 @@ export default function Header() {
     <header className="fixed top-0 z-50 w-full border-b border-white/5 bg-surface/80 backdrop-blur-xl">
       <div className="section-container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-2.5">
-          <img src="/logo-clear.png" alt="Timefog" className="h-8 w-8" />
+          <img src="/logo-fog.png" alt="Timefog" className="h-8 w-8" />
           <span className="text-lg font-semibold tracking-tight text-white">
             Timefog
           </span>
