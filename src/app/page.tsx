@@ -162,10 +162,10 @@ export default function Home() {
               <span className="text-gradient">Hyperfocus</span>
             </h1>
 
-            <p className="animate-fade-in-delay-1 mx-auto mt-6 max-w-4xl text-lg leading-relaxed text-white/60 sm:text-xl lg:whitespace-nowrap">
+            <p className="animate-fade-in-delay-1 mx-auto mt-6 max-w-2xl text-base leading-relaxed text-white/60 sm:text-lg">
               Ever spend too long on one thing and realize you ran out of time for everything else?
             </p>
-            <p className="animate-fade-in-delay-1 mx-auto mt-1 max-w-4xl text-lg leading-relaxed text-white/60 sm:text-xl lg:whitespace-nowrap">
+            <p className="animate-fade-in-delay-1 mx-auto mt-1 max-w-2xl text-base leading-relaxed text-white/60 sm:text-lg">
               Timefog makes that visible. In real time.
             </p>
 
@@ -182,7 +182,7 @@ export default function Home() {
             </div>
 
             {/* App logo - fog to clear loop animation */}
-            <div className="animate-fade-in-delay-3 animate-fog-to-clear relative mx-auto mt-12 flex items-center justify-center sm:mt-16 h-96 w-96 sm:h-[28rem] sm:w-[28rem]">
+            <div className="animate-fade-in-delay-3 animate-fog-to-clear relative mx-auto mt-12 flex items-center justify-center sm:mt-16 h-72 w-72 sm:h-96 sm:w-96 lg:h-[28rem] lg:w-[28rem]">
               <img src="/logo-fog.png" alt="Timefog" className="logo-fog absolute inset-0 h-full w-full object-contain" />
               <img src="/logo-clear.png" alt="Timefog" className="logo-clear absolute inset-0 h-full w-full object-contain" />
             </div>
