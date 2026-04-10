@@ -31,6 +31,12 @@ export default function Header() {
             Support
           </Link>
           <Link
+            href="/terms"
+            className="text-sm text-white/60 transition-colors hover:text-white"
+          >
+            Terms
+          </Link>
+          <Link
             href="/privacy"
             className="text-sm text-white/60 transition-colors hover:text-white"
           >
@@ -98,6 +104,13 @@ export default function Header() {
               className="text-sm text-white/60 transition-colors hover:text-white"
             >
               Support
+            </Link>
+            <Link
+              href="/terms"
+              onClick={() => setMobileOpen(false)}
+              className="text-sm text-white/60 transition-colors hover:text-white"
+            >
+              Terms
             </Link>
             <Link
               href="/privacy"

@@ -17,7 +17,7 @@ export default function PrivacyPage() {
             Privacy Policy
           </h1>
           <p className="mt-2 text-sm text-white/40">
-            Last updated: March 2026
+            Last updated: April 2026
           </p>
 
           <div className="mt-12 space-y-10 text-[15px] leading-relaxed text-white/70">
@@ -39,19 +39,19 @@ export default function PrivacyPage() {
                 Data stored locally on your device
               </h4>
               <p>
-                All task data, schedules, streaks, and preferences are stored
-                locally on your device in JSON files (tasks.json, segments.json,
-                settings.json, tracking_state.json). This data never leaves
-                your device.
+                All task data, time segments, streaks, sleep window settings, and
+                preferences are stored locally on your device in JSON files. This
+                data is used solely to power the app&apos;s features.
               </p>
 
               <h4 className="mb-2 mt-4 text-sm font-semibold text-white/90">
                 Account data (optional)
               </h4>
               <p>
-                If you choose to create an account, authentication is handled by
-                Clerk. Clerk collects your email address for the purpose of
-                account creation and login. You can review Clerk&apos;s privacy
+                If you choose to sign in, authentication is handled by Clerk.
+                Clerk collects your email address (or Apple/Google account info)
+                for account creation and login. Signing in is optional and is not
+                required to use the App. You can review Clerk&apos;s privacy
                 policy at{" "}
                 <a
                   href="https://clerk.com/legal/privacy"
@@ -68,23 +68,33 @@ export default function PrivacyPage() {
                 Cloud sync data (optional)
               </h4>
               <p>
-                Cloud sync via Supabase is prepared but not yet active. When
-                enabled in a future update, your task data will be stored in a
-                Supabase database tied to your user account, solely to
-                synchronize your information across your devices.
+                If you sign in, your task data, time segments, and settings are
+                synced to a Supabase database tied to your user account. This
+                allows your data to be backed up and restored if you switch
+                devices. Cloud data is protected by Row-Level Security &mdash;
+                only you can access your own data. You can review Supabase&apos;s
+                privacy policy at{" "}
+                <a
+                  href="https://supabase.com/privacy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-brand-light underline underline-offset-2 hover:text-white"
+                >
+                  supabase.com/privacy
+                </a>
+                .
               </p>
 
               <h4 className="mb-2 mt-4 text-sm font-semibold text-white/90">
                 Payment data
               </h4>
               <p>
-                Subscriptions ($28.99/year or $2.99/month, with a 7-day free
-                trial) are processed by RevenueCat through Apple&apos;s App
-                Store. We do not directly collect, store, or have access to
-                your payment information (such as credit card numbers).
-                RevenueCat processes transaction data in accordance with
-                Apple&apos;s policies. You can review RevenueCat&apos;s privacy
-                policy at{" "}
+                Subscriptions ($29.99/year or $2.99/month, with a 7-day free
+                trial on the annual plan) are processed by Apple through the App
+                Store. RevenueCat is used to manage subscription status. We do
+                not directly collect, store, or have access to your payment
+                information (such as credit card numbers). You can review
+                RevenueCat&apos;s privacy policy at{" "}
                 <a
                   href="https://www.revenuecat.com/privacy"
                   target="_blank"
@@ -100,9 +110,11 @@ export default function PrivacyPage() {
                 Push notifications
               </h4>
               <p>
-                The App uses push notifications solely for task reminders and
-                5-minute warnings before your planned time runs out. You can
-                disable notifications at any time in your iOS Settings.
+                The App uses local push notifications for task reminders
+                (Time&apos;s Up alerts, 5-minute warnings, and Priority Shrink
+                alerts). Notification permission is requested during onboarding
+                and can be disabled at any time in your iOS Settings. No
+                notification data is sent to external servers.
               </p>
             </Section>
 
@@ -120,12 +132,39 @@ export default function PrivacyPage() {
               </ul>
             </Section>
 
+            <Section title="Third-Party Services">
+              <p>The App uses the following third-party services:</p>
+              <ul className="mt-2 list-inside list-disc space-y-1.5">
+                <li>
+                  <strong className="text-white/90">Clerk</strong> &mdash;
+                  Authentication (sign in with Apple, Google, or email)
+                </li>
+                <li>
+                  <strong className="text-white/90">Supabase</strong> &mdash;
+                  Cloud database for data backup and sync
+                </li>
+                <li>
+                  <strong className="text-white/90">RevenueCat</strong> &mdash;
+                  Subscription management
+                </li>
+                <li>
+                  <strong className="text-white/90">Apple App Store</strong>{" "}
+                  &mdash; Payment processing
+                </li>
+              </ul>
+              <p className="mt-3">
+                Each service processes data according to their own privacy
+                policies, linked above.
+              </p>
+            </Section>
+
             <Section title="Data Security">
               <p>
                 All network communication between the App and our servers uses
-                HTTPS encryption. Local data is stored on your device and
-                protected by iOS&apos;s built-in security features, including
-                device encryption.
+                HTTPS encryption. Cloud data is protected by Supabase Row-Level
+                Security, ensuring each user can only access their own data.
+                Local data is stored on your device and protected by iOS&apos;s
+                built-in security features, including device encryption.
               </p>
             </Section>
 
@@ -146,10 +185,10 @@ export default function PrivacyPage() {
                 </li>
                 <li>
                   <strong className="text-white/90">Right to erasure:</strong>{" "}
-                  You can delete your account and all associated cloud data at
-                  any time from within the App (Settings &rarr; Account &rarr;
-                  Delete Account). Local data can be removed by deleting the App
-                  from your device.
+                  You can delete all local data from Settings &rarr; Privacy
+                  &amp; Data &rarr; Delete All Data. If you have an account, you
+                  can delete it and all associated cloud data from Settings
+                  &rarr; Privacy &amp; Data &rarr; Delete Account.
                 </li>
                 <li>
                   <strong className="text-white/90">Right to data portability:</strong>{" "}
@@ -163,10 +202,10 @@ export default function PrivacyPage() {
               <p className="mt-3">
                 To exercise any of these rights, contact us at{" "}
                 <a
-                  href="mailto:timefog.app@gmail.com"
+                  href="mailto:support@timefog.app"
                   className="text-brand-light underline underline-offset-2 hover:text-white"
                 >
-                  timefog.app@gmail.com
+                  support@timefog.app
                 </a>
                 .
               </p>
@@ -175,10 +214,9 @@ export default function PrivacyPage() {
             <Section title="Data Retention">
               <p>
                 Local data remains on your device until you delete it or
-                uninstall the App. Cloud data (if sync is enabled) is retained
-                as long as your account exists. When you delete your account,
-                all associated cloud data is permanently removed from our
-                servers.
+                uninstall the App. Cloud data (if you are signed in) is retained
+                as long as your account exists. When you delete your account, all
+                associated cloud data is permanently removed from our servers.
               </p>
             </Section>
 
@@ -210,10 +248,10 @@ export default function PrivacyPage() {
                 <p>Papeete, Tahiti, France</p>
                 <p>
                   <a
-                    href="mailto:timefog.app@gmail.com"
+                    href="mailto:support@timefog.app"
                     className="text-brand-light underline underline-offset-2 hover:text-white"
                   >
-                    timefog.app@gmail.com
+                    support@timefog.app
                   </a>
                 </p>
               </div>
