@@ -11,14 +11,14 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Timefog - See the Cost of Hyperfocus",
+  title: "Timefog - Daily Time Management & Balance",
   description:
-    "Timefog reveals the cost of hyperfocus \u2014 see where your time actually goes with a visual donut timeline. When one task runs overtime, your other priorities shrink in real time.",
+    "Most time trackers count hours. Timefog shows consequences. A visual donut timeline where overspending on one task shrinks the rest. Smart alerts, streaks, and daily balance \u2014 all in one app.",
   metadataBase: new URL("https://timefog.app"),
   openGraph: {
-    title: "Timefog - See the Cost of Hyperfocus",
+    title: "Timefog - Daily Time Management & Balance",
     description:
-      "Focus & Time Balance. See your day as a donut chart where tasks physically shrink when others run overtime.",
+      "Most time trackers count hours. Timefog shows consequences. A visual donut timeline where overspending on one task shrinks the rest.",
     url: "https://timefog.app",
     siteName: "Timefog",
     locale: "en_US",
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Timefog - See the Cost of Hyperfocus",
+    title: "Timefog - Daily Time Management & Balance",
     description:
-      "Focus & Time Balance. See your day as a donut chart where tasks physically shrink when others run overtime.",
+      "Most time trackers count hours. Timefog shows consequences. A visual donut timeline where overspending on one task shrinks the rest.",
   },
   robots: {
     index: true,

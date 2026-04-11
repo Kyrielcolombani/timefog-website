@@ -34,7 +34,7 @@ export default function TermsPage() {
                 Timefog is a time-tracking and focus-balance application for iOS.
                 It helps you visualize how your time is spent across tasks,
                 track streaks, manage priorities, and see the real cost of
-                hyperfocus through features like Priority Shrink.
+                time imbalance through features like Priority Shrink.
               </p>
             </Section>
 

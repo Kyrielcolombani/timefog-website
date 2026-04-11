@@ -67,7 +67,7 @@ const faqSections = [
       {
         question: "What is Priority Shrink?",
         answer:
-          "When you spend overtime on a priority task, that extra time \u201Ceats\u201D into the planned time of your other tasks, starting with your priorities. It\u2019s the app\u2019s way of showing you that hyperfocusing on one thing has a real cost on everything else.",
+          "When you spend overtime on a priority task, that extra time \u201Ceats\u201D into the planned time of your other tasks, starting with your priorities. It\u2019s the app\u2019s way of showing you that spending too much time on one thing comes at the expense of everything else in your day.",
       },
       {
         question: "I enabled Shrink but nothing is happening.",

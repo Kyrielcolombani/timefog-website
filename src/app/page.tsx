@@ -108,8 +108,8 @@ export default function Home() {
             </div>
 
             <h1 className="animate-fade-in-up mx-auto max-w-3xl text-5xl font-bold leading-[1.1] tracking-tight sm:text-7xl">
-              See the Cost of{" "}
-              <span className="text-gradient">Hyperfocus</span>
+              Your Time Deserves{" "}
+              <span className="text-gradient">Balance</span>
             </h1>
 
             <p className="animate-fade-in-delay-1 mx-auto mt-6 max-w-2xl text-base leading-relaxed text-white/60 sm:text-lg">
