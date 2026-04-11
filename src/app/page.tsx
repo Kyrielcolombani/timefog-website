@@ -8,9 +8,9 @@ const features = [
       "Your entire day shown as a single donut — every task, every break, every minute accounted for.",
     icon: (
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-        <circle cx="16" cy="16" r="12" stroke="#C4F2F9" strokeWidth="2.5" strokeDasharray="8 4" strokeLinecap="round" />
-        <circle cx="16" cy="16" r="6" stroke="#C4F2F9" strokeWidth="2" fill="none" />
-        <circle cx="16" cy="4" r="1.5" fill="#C4F2F9" />
+        {/* chart.pie — donut with a slice */}
+        <path d="M16 4A12 12 0 1 1 4 16h12V4Z" fill="#C4F2F9" />
+        <path d="M16 4A12 12 0 0 1 28 16H16V4Z" fill="#C4F2F9" opacity="0.4" />
       </svg>
     ),
   },
@@ -20,10 +20,11 @@ const features = [
       "When one task runs overtime, your other priorities physically shrink on screen. See exactly what you\u2019re sacrificing.",
     icon: (
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-        <path d="M10 14L16 20L22 14" stroke="#C4F2F9" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-        <path d="M6 22L12 16" stroke="#C4F2F9" strokeWidth="2" strokeLinecap="round" />
-        <path d="M20 16L26 22" stroke="#C4F2F9" strokeWidth="2" strokeLinecap="round" />
-        <path d="M10 8L16 14L22 8" stroke="#C4F2F9" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" opacity="0.4" />
+        {/* arrow.down.right.and.arrow.up.left — two opposing shrink arrows */}
+        <path d="M18 8L26 8L26 16" stroke="#C4F2F9" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M26 8L18 16" stroke="#C4F2F9" strokeWidth="2.5" strokeLinecap="round" />
+        <path d="M14 24L6 24L6 16" stroke="#C4F2F9" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M6 24L14 16" stroke="#C4F2F9" strokeWidth="2.5" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -33,11 +34,11 @@ const features = [
       "Switch between tasks instantly with a single tap. No menus, no friction.",
     icon: (
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-        <path d="M18 8C18 8 20 10 20 14C20 18 18 20 18 20" stroke="#C4F2F9" strokeWidth="2" strokeLinecap="round" />
-        <path d="M14 8C14 8 12 10 12 14C12 18 14 20 14 20" stroke="#C4F2F9" strokeWidth="2" strokeLinecap="round" />
-        <circle cx="16" cy="14" r="3" fill="#C4F2F9" />
-        <path d="M16 20V26" stroke="#C4F2F9" strokeWidth="2.5" strokeLinecap="round" />
-        <circle cx="16" cy="28" r="2" fill="#C4F2F9" opacity="0.5" />
+        {/* hand.tap.fill — hand with tap ring */}
+        <path d="M15 14V7C15 5.9 15.9 5 17 5C18.1 5 19 5.9 19 7V14" fill="#C4F2F9" opacity="0.3" />
+        <path d="M19 13V11.5C19 10.4 19.9 9.5 21 9.5C22.1 9.5 23 10.4 23 11.5V18L22 24H13L11 18V14C11 12.9 11.9 12 13 12C14.1 12 15 12.9 15 14" fill="#C4F2F9" />
+        <circle cx="17" cy="28" r="2" stroke="#C4F2F9" strokeWidth="1.5" fill="none" />
+        <circle cx="17" cy="28" r="4" stroke="#C4F2F9" strokeWidth="1" fill="none" opacity="0.4" />
       </svg>
     ),
   },
@@ -47,10 +48,11 @@ const features = [
       "Get a 5-minute warning before your planned time runs out. Stay ahead, not behind.",
     icon: (
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-        <path d="M9 22V14C9 10.134 12.134 7 16 7C19.866 7 23 10.134 23 14V22H9Z" fill="#C4F2F9" opacity="0.15" stroke="#C4F2F9" strokeWidth="2" strokeLinejoin="round" />
-        <path d="M7 22H25" stroke="#C4F2F9" strokeWidth="2" strokeLinecap="round" />
-        <path d="M13 25C13.5 26.5 14.5 27 16 27C17.5 27 18.5 26.5 19 25" stroke="#C4F2F9" strokeWidth="2" strokeLinecap="round" />
-        <circle cx="23" cy="8" r="3.5" fill="#C4F2F9" />
+        {/* bell.badge.fill — filled bell with badge dot */}
+        <path d="M16 4C16 4 10 4 10 12V20L8 22H24L22 20V12C22 4 16 4 16 4Z" fill="#C4F2F9" />
+        <path d="M13 22C13 24.2 14.3 26 16 26C17.7 26 19 24.2 19 22" fill="#C4F2F9" />
+        <circle cx="23" cy="7" r="4" fill="#C4F2F9" />
+        <circle cx="23" cy="7" r="2.5" fill="#0B0F1A" />
       </svg>
     ),
   },
@@ -60,11 +62,11 @@ const features = [
       "Your bedtime is protected automatically. The app switches to sleep mode when your sleep window starts.",
     icon: (
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-        <path d="M24 20C24 24.4183 20.4183 28 16 28C11.5817 28 8 24.4183 8 20C8 15.5817 11.5817 12 16 12" stroke="#C4F2F9" strokeWidth="2" strokeLinecap="round" />
-        <path d="M20 4C17 7 17 12 20 15C23 18 28 18 31 15" stroke="#C4F2F9" strokeWidth="2" strokeLinecap="round" fill="none" />
-        <circle cx="11" cy="8" r="1" fill="#C4F2F9" />
-        <circle cx="8" cy="12" r="1.5" fill="#C4F2F9" opacity="0.6" />
-        <circle cx="14" cy="6" r="1" fill="#C4F2F9" opacity="0.4" />
+        {/* moon.stars.fill — crescent moon with stars */}
+        <path d="M22 6C18 6 14 9 14 16C14 23 18 26 22 26C12 26 6 22 6 16C6 10 12 6 22 6Z" fill="#C4F2F9" />
+        <circle cx="24" cy="10" r="1.5" fill="#C4F2F9" />
+        <circle cx="27" cy="14" r="1" fill="#C4F2F9" />
+        <circle cx="25" cy="18" r="1.2" fill="#C4F2F9" opacity="0.6" />
       </svg>
     ),
   },
@@ -74,8 +76,9 @@ const features = [
       "Complete your priorities within their planned time to build streaks. Track consistency with an emoji calendar.",
     icon: (
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-        <path d="M16 4C16 4 12 10 12 16C12 20 14 24 16 28C18 24 20 20 20 16C20 10 16 4 16 4Z" fill="#C4F2F9" opacity="0.15" stroke="#C4F2F9" strokeWidth="2" strokeLinejoin="round" />
-        <path d="M16 14C16 14 14 17 14 19C14 21 15 22 16 23C17 22 18 21 18 19C18 17 16 14 16 14Z" fill="#C4F2F9" opacity="0.5" />
+        {/* flame.fill — solid flame shape */}
+        <path d="M16 2C16 2 10 10 10 18C10 22.4 12.7 26 16 28C19.3 26 22 22.4 22 18C22 10 16 2 16 2Z" fill="#C4F2F9" />
+        <path d="M16 16C16 16 13.5 19 13.5 22C13.5 24 14.5 26 16 28C17.5 26 18.5 24 18.5 22C18.5 19 16 16 16 16Z" fill="#0B0F1A" opacity="0.4" />
       </svg>
     ),
   },
