@@ -20,11 +20,11 @@ const features = [
       "When one task runs overtime, your other priorities physically shrink on screen. See exactly what you\u2019re sacrificing.",
     icon: (
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-        {/* arrow.down.right.and.arrow.up.left — two opposing shrink arrows */}
-        <path d="M18 8L26 8L26 16" stroke="#C4F2F9" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-        <path d="M26 8L18 16" stroke="#C4F2F9" strokeWidth="2.5" strokeLinecap="round" />
-        <path d="M14 24L6 24L6 16" stroke="#C4F2F9" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-        <path d="M6 24L14 16" stroke="#C4F2F9" strokeWidth="2.5" strokeLinecap="round" />
+        {/* arrow.down.right.and.arrow.up.left — inward-pointing arrows */}
+        <path d="M6 6L14 14" stroke="#C4F2F9" strokeWidth="2.5" strokeLinecap="round" />
+        <path d="M14 8L14 14L8 14" stroke="#C4F2F9" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M26 26L18 18" stroke="#C4F2F9" strokeWidth="2.5" strokeLinecap="round" />
+        <path d="M18 24L18 18L24 18" stroke="#C4F2F9" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     ),
   },
@@ -49,10 +49,10 @@ const features = [
     icon: (
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
         {/* bell.badge.fill — filled bell with badge dot */}
-        <path d="M16 4C16 4 10 4 10 12V20L8 22H24L22 20V12C22 4 16 4 16 4Z" fill="#C4F2F9" />
-        <path d="M13 22C13 24.2 14.3 26 16 26C17.7 26 19 24.2 19 22" fill="#C4F2F9" />
-        <circle cx="23" cy="7" r="4" fill="#C4F2F9" />
-        <circle cx="23" cy="7" r="2.5" fill="#0B0F1A" />
+        <path d="M16 2C16 2 8 2 8 12V22L5 25H27L24 22V12C24 2 16 2 16 2Z" fill="#C4F2F9" />
+        <path d="M12 25C12 27.8 13.8 30 16 30C18.2 30 20 27.8 20 25" fill="#C4F2F9" />
+        <circle cx="25" cy="5" r="5" fill="#C4F2F9" />
+        <circle cx="25" cy="5" r="3" fill="#0B0F1A" />
       </svg>
     ),
   },
