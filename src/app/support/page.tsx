@@ -176,7 +176,7 @@ export default function SupportPage() {
               days.
             </p>
             <a
-              href="mailto:support@timefog.app"
+              href="mailto:timefog.app@gmail.com"
               className="mt-4 inline-flex items-center gap-2 rounded-full bg-brand-light/10 px-5 py-2.5 text-sm font-medium text-brand-light transition-colors hover:bg-brand-light/20"
             >
               <svg
@@ -192,7 +192,7 @@ export default function SupportPage() {
                 <rect x="1" y="3" width="14" height="10" rx="2" />
                 <path d="M1 5L8 9L15 5" />
               </svg>
-              support@timefog.app
+              timefog.app@gmail.com
             </a>
           </div>
 

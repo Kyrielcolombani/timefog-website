@@ -202,10 +202,10 @@ export default function PrivacyPage() {
               <p className="mt-3">
                 To exercise any of these rights, contact us at{" "}
                 <a
-                  href="mailto:support@timefog.app"
+                  href="mailto:timefog.app@gmail.com"
                   className="text-brand-light underline underline-offset-2 hover:text-white"
                 >
-                  support@timefog.app
+                  timefog.app@gmail.com
                 </a>
                 .
               </p>
@@ -248,10 +248,10 @@ export default function PrivacyPage() {
                 <p>Papeete, Tahiti, France</p>
                 <p>
                   <a
-                    href="mailto:support@timefog.app"
+                    href="mailto:timefog.app@gmail.com"
                     className="text-brand-light underline underline-offset-2 hover:text-white"
                   >
-                    support@timefog.app
+                    timefog.app@gmail.com
                   </a>
                 </p>
               </div>
